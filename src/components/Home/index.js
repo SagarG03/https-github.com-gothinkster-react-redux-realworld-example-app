@@ -48,6 +48,13 @@ class Home extends React.Component {
         <Banner token={this.props.token} appName={this.props.appName} />
 
         <div className="container page">
+          <button
+            type="button"
+            className="btn btn-outline-secondary refresh-button"
+            onClick={() => window.location.reload()}>
+            Refresh
+          </button>
+
           <div className="row">
             <MainView />
 
